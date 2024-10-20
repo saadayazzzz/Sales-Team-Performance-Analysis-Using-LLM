@@ -29,20 +29,22 @@ Hugging Face Transformers: Used to integrate a pre-trained language model (GPT-N
 PyTorch: Backend for the LLM model (needed by Hugging Face Transformers).
 
 # Setup and Run Instructions
-1. Clone the Repository
+1. The "api" folder contains the endpoints.py file, the "services" folder contains llm_analysis.py & data_processing.py.
+
+2. Clone the Repository
 First, clone the repository to your local machine:
 git clone 'https://github.com/saadayazzzz/Sales-Team-Performance-Analysis-Using-LLM.git'
 cd sales_analysis_llm
 
-2. Set Up Virtual Environment
+3. Set Up Virtual Environment
 Create a virtual environment and activate it:
 python -m venv venv
 .\venv\Scripts\activate
 
-3. Place the CSV File
+4. Place the CSV File
 Make sure that the sales_performance_data.csv file (with columns like employee_id, lead_taken, revenue_confirmed, etc.) is placed in the root directory of the project.
 
-4. Run the project
+5. Run the project
 You should see the following output indicating that the server is running locally:
  * Running on http://127.0.0.1:5000/ 
 
