@@ -1,9 +1,9 @@
 ﻿# Sales-Team-Performance-Analysis-Using-LLM
 
-Overview
+# Overview
 This project provides a backend system that analyzes sales data using a Large Language Model (LLM) to generate performance feedback for both individual sales representatives and the entire sales team. The system is built using Flask for API development, Pandas for data handling, and Hugging Face's Transformers for LLM integration.
 
-Features
+# Features
 - Individual Sales Performance: Analyze the performance of individual sales representatives.
 - Team Performance Summary: Get insights into the overall performance of the sales team.
 - Trends & Forecasting: Analyze historical data to identify trends and make performance forecasts.
@@ -22,19 +22,20 @@ Project Architecture
     app.py                    # Main application entry point (Flask app)
     sales_performance_data.csv # CSV file with sales data (not uploaded to GitHub)
 
-Technologies Used
+# Technologies Used
 Flask: Web framework for building the API.
 Pandas: For data manipulation and processing.
 Hugging Face Transformers: Used to integrate a pre-trained language model (GPT-Neo) for generating feedback.
 PyTorch: Backend for the LLM model (needed by Hugging Face Transformers).
 
-All URLS Used:
+# All URLS Used:
  * Running on http://127.0.0.1:500
  * http://127.0.0.1:5000/api/rep_performance?employee_id=123
  * http://127.0.0.1:5000/api/team_performance
  * http://127.0.0.1:5000/api/performance_trends
 
-How Feedback Generation Works
+# How Feedback Generation Works
+
 The feedback generation is powered by the GPT-Neo model from Hugging Face’s Transformers library. Here’s the process:
 - The relevant sales performance data (individual or team) is extracted from the CSV file.
 - This data is passed to the generate_feedback function, which uses the GPT-Neo model to generate a feedback summary based on the data.
